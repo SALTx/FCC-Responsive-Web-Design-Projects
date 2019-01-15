@@ -1,0 +1,98 @@
+body {
+    padding: 0 auto;
+    text-align: center;
+    background-color: lightyellow;
+    font-family: roboto;
+}
+h1 {
+    background-color: yellowgreen;
+    padding: 10px;
+}
+h2 {
+    background-color: lightgoldenrodyellow;
+    padding: 5px;
+}
+h1:hover, h2:hover {
+    background-color: #E9E9C1
+}
+#image {
+    border-radius: 5em;
+    padding: 0 5em;
+    background: linear-gradient(90deg, hsl(180, 20%, 50%), hsl(20, 20%, 50%));
+    max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+
+nav {
+    background-color: #EC9FFF;
+}
+
+nav ul {
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    font-family: monospace, arial, sans;
+}
+
+nav ul li a {
+    color: midnightblue;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    text-decoration: underline;
+}
+blockquote {
+    border: 1px solid indianred;
+    background-color: lightgoldenrodyellow;
+    border-left: 5px solid gray;
+    font-size: 0.9em;
+    margin: 0 2em;
+    padding: 0.5em;
+    
+}
+#tribute-link {
+  text-decoration: none;
+  color: orange;
+}
+footer {
+    padding: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    animation: rainbowcolor 25s infinite;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes rainbowcolor {
+    0% {
+        color: red;
+    }
+    20% {
+        color: orange;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: green;
+    }
+    80% {
+        color: blue
+    }
+    100% {
+        color: indigo;
+    }
+}
