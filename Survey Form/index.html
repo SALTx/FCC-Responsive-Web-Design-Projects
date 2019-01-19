@@ -22,21 +22,26 @@
                 <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
                 <label for="number" id="number-label">Age:</label>
                 <input type="number" min="1" max="120" placeholder="Age" id="number" name="age"><br>
-                <label for="used">Which of the following psycedelics have you used before</label><br>
+                <p>Which of the following psycedelics have you used before</p><br>
                 <div id="checkboxes">
-                    <input type="checkbox" name="used" value="None" id="used">None
-                    <input type="checkbox" name="used" value="LSD" id="used">LSD
-                    <input type="checkbox" name="used" value="DMT" id="used">DMT
-                    <input type="checkbox" name="used" value="Psilocybin" id="used">Psilocybin
-                    <input type="checkbox" name="used" value="Others" id="used">Others
+                    <div id="flexItem"><input type="checkbox" name="used" value="None">None</div>
+                    <div id="flexItem"><input type="checkbox" name="used" value="LSD">LSD</div>
+                    <div id="flexItem"><input type="checkbox" name="used" value="DMT">DMT</div>
+                    <div id="flexItem"><input type="checkbox" name="used" value="Psilocybin">Psilocybin</div>
+                    <div id="flexItem"><input type="checkbox" name="used" value="Others">Others</div>
                 </div>
                 <br>
-                <label for="recommend">Would you recomend any psychedelics to your friends/family</label>
+                <p>Would you recomend any psychedelics to your friends/family</p>
                 <br>
-                Yes <input type="radio" value="Yes" id="recommend" name="recommend">
-                No <input type="radio" value="No" id="recommend" name="recommend">
+                <span id="radio">
+                    Yes <input type="radio" value="Yes" id="recommend" name="recommend">
+                </span>
+                <span id="radio">
+                    No <input type="radio" value="No" id="recommend" name="recommend">
+                </span>
+
                 <br>
-                <label for="opinion">What is your opinion on psychedelics</label>
+                <p>What is your opinion on psychedelics</p>
                 <br>
                 <textarea name="opinion" id="opinion" cols="35" rows="10" placeholder="Write something here..."></textarea>
                 <br>

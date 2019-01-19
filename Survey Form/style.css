@@ -9,6 +9,8 @@ header {
 }
 
 header h1 {
+    margin: auto;
+    margin-bottom: 1em;
     padding: 5px;
 }
 
@@ -24,8 +26,9 @@ label {
     width: 20em;
     text-align: left;
 }
-#formContainer {
-   
+#checkboxes {
+    display: inline-flex;
+    justify-content: center;
 }
 
 input {
@@ -38,11 +41,15 @@ input {
 input,
 select {
     margin: 1em 0;
-
 }
-
 input[type="checkbox"] {
     margin: 0 0.25em 0 1em;
+}
+input[type="radio"] {
+    margin-right: 
+}
+#radio {
+    margin: 0 1em;
 }
 
 #submit,
@@ -73,7 +80,10 @@ textarea {
         width: 100%;
         text-align: center;
     }
-
+    #checkboxes {
+        display: flex;
+        flex-direction: column;
+    }
     input[type="text"],
     input[type="number"],
     input[type="email"] {
