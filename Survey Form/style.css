@@ -1,15 +1,87 @@
 body {
-    background-color: orange;
-    text-align: center;
+    background-color: mediumpurple;
+    font-family: roboto, serif, monospace;
 }
-section {
+
+header {
+    font-family: arial, serif, monospace !important;
+    background-color: aliceblue;
+}
+
+header h1 {
+    padding: 5px;
+}
+
+main {
+    margin: 3em 2em;
+    padding: 1em;
+    text-align: center;
     background-color: white;
 }
-#flexContainer {
-    display: flex;
-    justify-content: center;
-    
-}
-#labels {
+
+label {
+    display: inline;
+    width: 20em;
     text-align: left;
+}
+#formContainer {
+   
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    background-color: #EEE;
+    padding: 5px;
+}
+
+input,
+select {
+    margin: 1em 0;
+
+}
+
+input[type="checkbox"] {
+    margin: 0 0.25em 0 1em;
+}
+
+#submit,
+#reset {
+    margin: 1em;
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 0.75em;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #EEE;
+}
+
+#submit:hover ,
+#reset:hover {
+    text-decoration: underline;
+    background-color: darkorange;
+}
+
+@media screen and (max-width: 520px) {
+    label {
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+        width: 100%;
+        text-align: center;
+    }
+
+    select {
+        width: 100%;
+    }
 }
