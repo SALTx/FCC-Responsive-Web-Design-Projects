@@ -133,36 +133,13 @@ textarea {
     padding: 1em;
     text-align: center;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
+    body {
+        margin: 0.5em;
+    }
     label {
         text-align: center;
     }
-}
-@media only screen and (max-width: 500px) {
-    nav {
-        text-align: left;
-    }
-
-    nav ul li {
-        margin: 0.5em 0
-    }
-
-    nav ul li a {
-        padding: 0.5em 0
-    }
-
-    nav ul li a:hover {
-        color: white;
-        background-color: rebeccapurple;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: auto;
-    }
-
     table {
         padding: 0;
         margin: auto;
