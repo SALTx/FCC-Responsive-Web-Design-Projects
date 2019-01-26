@@ -1,0 +1,64 @@
+body {
+    font-family: roboto, sans-serif, arial, monospace;
+    background-color: whitesmoke;
+}
+
+#navbar {
+    overflow: auto;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+#navbar header {
+    padding: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+code {
+    display: block;
+    overflow: auto;
+    background-color: #DEE;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px dotted #4AA;
+    border-left: 5px solid #4AA;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: #EFA;
+}
+
+#main-doc {
+    margin-left: 250px;
+}
+
+.main-section {
+    padding: 20px;
+}
+
+.main-section header {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: mediumpurple;
+}
+
+a:visited {}

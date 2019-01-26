@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FCC Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>P5.JS Documentation</header>
+        <a class="nav-link" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#hello_world">Hello World</a>
+        <a class="nav-link" href="#canvas">Canvas</a>
+        <a class="nav-link" href="#shapes">Drawing Shapes</a>
+        <a href="#complex-shapes" class="nav-link">Complex Shapes</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                Introduction
+            </header>
+            <p>p5.js is a JavaScript library that starts with the original goal of Processing — to make coding accessible for artists, designers, educators, and beginners — and reinterprets this for today's web.</p>
+            <p>Using the original metaphor of a software sketchbook, p5.js has a full set of drawing functionality. However, you're not limited to your drawing canvas, you can think of your whole browser page as your sketch! For this, p5.js has addon libraries that make it easy to interact with other HTML5 objects, including text, input, video, webcam, and sound.</p>
+        </section>
+
+        <section class="main-section" id="hello_world">
+            <header>
+                Hello World
+            </header>
+            <p>There are two main functions you will use in your program. The setup() block runs once, and is typically used for initialization, or for creating a program that does not need a loop running code repeatedly. The draw() block runs repeatedly, and is used for animation.</p>
+            <p>For your first "Hello World" program, create a setup() block and add one line:</p>
+            <code>
+                function setup() {<br>
+                &emsp;&emsp;line(15, 25, 70, 90);<br>
+                }
+            </code>
+            <p>If you view this in your browser, you should see a single line.</p>
+            <p>Adding a draw() block enables you to incorporate animation. In the example below, a variable is updated every time draw() runs, moving a circle across the screen.</p>
+            <code>
+                var x = 0;<br><br>
+                function setup() {<br>
+                &emsp;&emsp;background(100);<br>
+                }<br><br>
+                function draw() {<br>
+                &emsp;&emsp;ellipse(x, height/2, 20, 20);<br>
+                &emsp;&emsp;x = x + 1;<br>
+                }
+            </code>
+        </section>
+
+        <section class="main-section" id="canvas">
+            <header>
+                Canvas
+            </header>
+            <p>By default, the drawing canvas has a size of 100x100. If you want to set a custom size, use the createCanvas() function. It is a good idea to always make this the first line in setup(). The code below sets the canvas to size 600x400:</p>
+            <code>
+                function setup() {<br>
+                &emsp;&emsp;createCanvas(600, 400);<br>
+                &emsp;&emsp;line(15, 25, 70, 90);<br>
+                }
+            </code>
+            <p>createCanvas() will create a new drawing canvas in the size specified and append it to the html page you are working with. If there is other content in the body of your html page, it will add on to the page after that, so you may not see it at the top of the window.</p>
+            <p>The canvas will also be affected by any existing css (styling) on the page, including default set by your browser. For example, a lot of browsers have a default padding around the end of the page. If you are noticing that your canvas isn't all the way at the upper left corner of your window, this is probably why.</p>
+        </section>
+
+        <section class="main-section" id="shapes">
+            <header>
+                Drawing Shapes
+            </header>
+            <p>One of the first thing you learn in p5.js is drawing shapes. There are many shapes you can draw, the most common shapes used are ellipse for circles and rect for squares and rectangles.</p>
+            <code>
+                ellipse(x, y, width, height);<br>
+                rect(x, y, width, height);<br>
+                triangle(x1, y1, x2, y2, x3, y3);<br>
+                line(x1, y1, x2, y2);<br>
+                arc(x, y, width, height, start, stop);<br>
+                quad(x1, y1, x2, y2, x3, y3, x4, y4);<br>
+                bezier(x1, y1, cx1, cy1, cx2, cy2, x2, y2);
+            </code>
+        </section>
+
+        <section class="main-section" id="complex-shapes">
+            <header>
+                Complex Shapes
+            </header>
+            <p>There are also shapes that are more complex than just circles and squares. Below are some examples linked to the documentation on Khan Academy</p>
+            <code>
+                <a href="https://www.khanacademy.org/computer-programming/beginshapeendshape/5462945756610560">
+                    beginShape() / endShape() / vertex()
+                </a><br>
+                <a href="https://www.khanacademy.org/computer-programming/curvevertexx-y/6499542019080192">
+                    curveVertex()
+                </a><br>
+                <a href="https://www.khanacademy.org/computer-programming/beziervertexcx1-cy1-cx2-cy2-x-y/5085481683386368">
+                    bezierVertex()
+                </a>
+            </code>
+        </section>
+    </main>
+</body>
+
+</html>
