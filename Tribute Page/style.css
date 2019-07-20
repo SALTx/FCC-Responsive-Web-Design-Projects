@@ -94,6 +94,12 @@ footer {
   	background: darkpurple; 
 }
 
+@media (max-width: 650px) {
+	nav ul li {
+		display: block;
+	}
+}
+
 @keyframes rainbow {
 	15% {
 		color: rgba(255, 0, 0, 0.8);
