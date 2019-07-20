@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+	<header>
+		<h1>Psychedelics Survey</h1>
+	</header>
+	<form action="">
+		<div id="flexContainer">
+			<div id="labelContainer">
+				<label for="name">Name:</label><br>
+				<label for="age">Age:</label><br>
+				<label for="used">Which of the following psychedelics have you used before:</label><br>
+				<label for="recommend">Would you recommend psychedelics to your friends or family ?</label><br>
+				<label for="opinion">What do you think about psychedelics</label><br>
+			</div>
+			<div id="inputContainer">
+				<input type="text" id="name"><br>
+				<input type="number" min="1" max="150" id="age"><br>
+				<div class="checkboxes">
+					<input type="checkbox" name="used" id="lsd" value="lsd">LSD
+					<input type="checkbox" name="used" id="dmt" value="dmt">DMT
+					<input type="checkbox" name="used" id="psilocybin" value="psilocybin">Psilocybin<br>
+				</div>
+				<div class="checkboxes">
+					<input type="radio" name="recommend" id="yes" value="Yes">Yes
+					<input type="radio" name="recommend" id="no" value="no">No<br>
+				</div>
+				<textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="Write something here..." required><br></textarea><br>
+			</div>
+		</div>
+		<div id="buttonContainer">
+			<button type="submit" id="submit">Submit</button>
+			<button type="reset" id="clear">Clear</button>
+		</div>
+	</form>
+	<footer>
+
+	</footer>
+</body>
+</html>
